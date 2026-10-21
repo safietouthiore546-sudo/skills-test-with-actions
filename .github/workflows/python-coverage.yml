@@ -1,4 +1,4 @@
-```yaml
+
 name: Python Coverage
 
 on:
@@ -20,7 +20,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: 3.13
+          python-version: "3.13"
 
       - name: Install dependencies
         run: |
@@ -41,4 +41,3 @@ jobs:
 
       - name: Fail if below threshold
         run: coverage report --fail-under=90
-```
